@@ -1,0 +1,1 @@
+tailwind is a utility based , mobile first(min width first)
