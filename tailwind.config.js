@@ -2,7 +2,7 @@ module.exports = {
   content: ['./src/**/*.{html,js}', './*.{html,js}'],
   theme: {
     fontFamily: {
-      poppins: ['poppins, sans-serif'],
+      poppins: ['Poppins'],
     },
     container: {
       center: true,
@@ -22,6 +22,7 @@ module.exports = {
         'dark-blue': '#5643fa',
         secondary: '#212529',
         'btn-color': '#00bcb3',
+        'menu-color': '#040E27'
       },
     },
   },
