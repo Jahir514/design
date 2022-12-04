@@ -1,31 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="output/style.css" />
-</head>
-
-<body class="bg-white font-poppins">
-  <nav class="py-6 pl-12 pr-24 flex items-center space-x-4">
-    <div class="text-menu-color font-bold text-xl basis-2/12 bg-yellow-700">Brand.</div>
-    <div class="basis-6/12">
-      <ul class="flex items-center space-x-6 font-normal font-poppins">
-        <li>Home</li>
-        <li>About</li>
-        <li>Destination</li>
-        <li>Pages</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-    <div class="basis-4/12 bg-red-500">
-      sfsdf
-    </div>
-  </nav>
-</body>
-
+  <body class="bg-white font-poppins">
+    <!-- navbar start -->
+    <nav class="py-6 pl-12 pr-24 flex items-center space-x-4 relative">
+      <div class="text-menu-color font-bold text-xl basis-2/12">
+        <a href="">Brand.</a>
+      </div>
+      <div class="hidden md:block basis-6/12 relative">
+        <span
+          class="absolute w-5 h-9 md:-left-6 lg:-left-8 xl:-left-12 2xl:-left-20 -top-1.5 border-l-[1px] border-l-[#EAEAEA]"
+        ></span>
+        <ul
+          class="flex items-center space-x-4 xl:space-x-6 font-normal font-poppins md:text-xs lg:text-sm xl:text-base"
+        >
+          <li>
+            <a href="" class="hover:text-primary transition delay-75">Home</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-primary transition delay-75">About</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-primary transition delay-75"
+              >Destination</a
+            >
+          </li>
+          <li>
+            <a href="" class="hover:text-primary transition delay-75">Pages</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-primary transition delay-75">Blog</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-primary transition delay-75"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="hidden basis-4/12 md:flex items-center justify-end lg:space-x-6 xl:space-x-11 2xl:space-x-16 pr-4 xl:pr-6"
+      >
+        <div>
+          <ul class="flex items-center space-x-1 xl:space-x-2">
+            <li><i class="fas fa-phone-alt text-primary"></i></li>
+            <li class="text-xs xl:text-base">+088 01734567890</li>
+          </ul>
+        </div>
+        <div class="hidden lg:block relative">
+          <span
+            class="absolute w-5 h-6 lg:-left-3 xl:-left-6 2xl:-left-8 -top-[.5px] border-l-[1px] border-l-[#EAEAEA]"
+          ></span>
+          <ul class="flex items-center text-primary lg:space-x-4 xl:space-x-6">
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="absolute w-24 h-full bg-primary text-white right-0 flex items-center justify-center cursor-pointer"
+      >
+        <i class="fas fa-search"></i>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <section
+      class="w-full h-[650px] flex items-center justify-center flex-col bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./assets/images/banner.png')"
+    >
+      <div class="text-white text-center">
+        <h1 class="text-6xl md:text-8xl xl:text-9xl mb-4">Australia</h1>
+        <p class="text-sm md:text-base xl:text-xl font-normal mb-12">
+          Pixel perfect design with awesome content
+        </p>
+        <button
+          class="bg-primary px-8 py-4 md:px-10 md:py-5 capitalize text-sm md:text-base rounded-md font-medium hover:bg-secondary transition delay-75"
+        >
+          explore now
+        </button>
+      </div>
+    </section>
+  </body>
 </html>

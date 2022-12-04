@@ -21,8 +21,8 @@ module.exports = {
         'light-blue': '#2998ff',
         'dark-blue': '#5643fa',
         secondary: '#212529',
-        'btn-color': '#00bcb3',
-        'menu-color': '#040E27'
+        primary: '#00bcb3',
+        'menu-color': '#040E27',
       },
     },
   },
