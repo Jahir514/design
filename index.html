@@ -1,155 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="output/style.css" />
-</head>
-
-<body class="bg-white font-poppins">
-  <!-- navbar start -->
-  <nav class="py-6 pl-12 pr-24 flex items-center space-x-4 relative">
-    <div class="text-menu-color font-bold text-xl basis-2/12">
-      <a href="">Brand.</a>
-    </div>
-    <div class="hidden md:block basis-6/12 relative">
-      <span
-        class="absolute w-5 h-9 md:-left-6 lg:-left-8 xl:-left-12 2xl:-left-20 -top-1.5 border-l-[1px] border-l-[#EAEAEA]"></span>
-      <ul class="flex items-center space-x-4 xl:space-x-6 font-normal font-poppins md:text-xs lg:text-sm xl:text-base">
-        <li>
-          <a href="" class="hover:text-primary transition delay-75">Home</a>
-        </li>
-        <li>
-          <a href="" class="hover:text-primary transition delay-75">About</a>
-        </li>
-        <li>
-          <a href="" class="hover:text-primary transition delay-75">Destination</a>
-        </li>
-        <li>
-          <a href="" class="hover:text-primary transition delay-75">Pages</a>
-        </li>
-        <li>
-          <a href="" class="hover:text-primary transition delay-75">Blog</a>
-        </li>
-        <li>
-          <a href="" class="hover:text-primary transition delay-75">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="hidden basis-4/12 md:flex items-center justify-end lg:space-x-6 xl:space-x-11 2xl:space-x-16 pr-4 xl:pr-6">
-      <div>
-        <ul class="flex items-center space-x-1 xl:space-x-2">
-          <li><i class="fas fa-phone-alt text-primary"></i></li>
-          <li class="text-xs 2xl:text-base">+088 01734567890</li>
-        </ul>
+  <body class="bg-white font-poppins">
+    <!-- navbar start -->
+    <nav class="py-6 pl-12 pr-24 flex items-center space-x-4 relative">
+      <div class="text-menu-color font-bold text-xl basis-2/12">
+        <a href="">Brand.</a>
       </div>
-      <div class="hidden lg:block relative">
+      <div class="hidden md:block basis-6/12 relative">
         <span
-          class="absolute w-5 h-6 lg:-left-3 xl:-left-6 2xl:-left-8 -top-[.5px] border-l-[1px] border-l-[#EAEAEA]"></span>
-        <ul class="flex items-center text-primary lg:space-x-4 xl:space-x-6">
+          class="absolute w-5 h-9 md:-left-6 lg:-left-8 xl:-left-12 2xl:-left-20 -top-1.5 border-l-[1px] border-l-[#EAEAEA]"
+        ></span>
+        <ul
+          class="flex items-center space-x-4 xl:space-x-6 font-normal font-poppins md:text-xs lg:text-sm xl:text-base"
+        >
           <li>
-            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href="" class="hover:text-primary transition delay-75">Home</a>
           </li>
           <li>
-            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href="" class="hover:text-primary transition delay-75">About</a>
           </li>
           <li>
-            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="hover:text-primary transition delay-75"
+              >Destination</a
+            >
           </li>
           <li>
-            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="" class="hover:text-primary transition delay-75">Pages</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-primary transition delay-75">Blog</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-primary transition delay-75"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
-    </div>
-    <div class="absolute w-24 h-full bg-primary text-white right-0 flex items-center justify-center cursor-pointer">
-      <i class="fas fa-search"></i>
-    </div>
-  </nav>
-  <!-- navbar end -->
-  <!-- Banner start -->
-  <section class="w-full h-[650px] flex items-center justify-center flex-col bg-cover bg-center bg-no-repeat"
-    style="background-image: url('./assets/images/banner.png')">
-    <div class="text-white text-center">
-      <h1 class="text-6xl md:text-8xl xl:text-9xl mb-4">Australia</h1>
-      <p class="text-sm md:text-base xl:text-xl font-normal mb-12">
-        Pixel perfect design with awesome content
-      </p>
-      <button
-        class="bg-primary px-8 py-4 md:px-10 md:py-5 capitalize text-sm md:text-base rounded-md font-medium hover:bg-secondary transition delay-75">
-        explore now
-      </button>
-    </div>
-  </section>
-  <!-- Banner End -->
-  <!-- Favorite place start -->
-  <section class="py-20 text-center">
-    <div class="container">
-      <div class="heading pb-16">
-        <h2 class="capitalize text-4xl font-normal pb-3">popular Destination</h2>
-        <p class="text-base font-normal text-dark-grey">Suffered alteration in some form, by injected humour or good
-          day <br> randomised
-          booth anim 8-bit hella wolf moon
-          beard words.</p>
-      </div>
-      <div class="grid grid-cols-3 gap-6">
-        <div class="rounded-sm relative overflow-hidden">
-          <img src="assets/images/favorite-place-1.png" alt="favorite-place-1" class="w-full">
-          <div class="absolute inset-0 bg-black opacity-20"></div>
-          <div class="absolute inset-0 flex items-end pb-8 pl-7">
-            <h3 class="text-white text-xl mr-3 font-medium">Brazil</h3>
-            <button class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white">03 places</button>
-          </div>
+      <div
+        class="hidden basis-4/12 md:flex items-center justify-end lg:space-x-6 xl:space-x-11 2xl:space-x-16 pr-4 xl:pr-6"
+      >
+        <div>
+          <ul class="flex items-center space-x-1 xl:space-x-2">
+            <li><i class="fas fa-phone-alt text-primary"></i></li>
+            <li class="text-xs 2xl:text-base">+088 01734567890</li>
+          </ul>
         </div>
-        <div class="rounded-sm relative overflow-hidden">
-          <img src="assets/images/favorite-place-1.png" alt="favorite-place-1" class="w-full">
-          <div class="absolute inset-0 bg-black opacity-20"></div>
-          <div class="absolute inset-0 flex items-end pb-8 pl-7">
-            <h3 class="text-white text-xl mr-3 font-medium">Brazil</h3>
-            <button class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white">03 places</button>
-          </div>
-        </div>
-        <div class="rounded-sm relative overflow-hidden">
-          <img src="assets/images/favorite-place-1.png" alt="favorite-place-1" class="w-full">
-          <div class="absolute inset-0 bg-black opacity-20"></div>
-          <div class="absolute inset-0 flex items-end pb-8 pl-7">
-            <h3 class="text-white text-xl mr-3 font-medium">Brazil</h3>
-            <button class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white">03 places</button>
-          </div>
-        </div>
-        <div class="rounded-sm relative overflow-hidden">
-          <img src="assets/images/favorite-place-1.png" alt="favorite-place-1" class="w-full">
-          <div class="absolute inset-0 bg-black opacity-20"></div>
-          <div class="absolute inset-0 flex items-end pb-8 pl-7">
-            <h3 class="text-white text-xl mr-3 font-medium">Brazil</h3>
-            <button class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white">03 places</button>
-          </div>
-        </div>
-        <div class="rounded-sm relative overflow-hidden">
-          <img src="assets/images/favorite-place-1.png" alt="favorite-place-1" class="w-full">
-          <div class="absolute inset-0 bg-black opacity-20"></div>
-          <div class="absolute inset-0 flex items-end pb-8 pl-7">
-            <h3 class="text-white text-xl mr-3 font-medium">Brazil</h3>
-            <button class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white">03 places</button>
-          </div>
-        </div>
-        <div class="rounded-sm relative overflow-hidden">
-          <img src="assets/images/favorite-place-1.png" alt="favorite-place-1" class="w-full">
-          <div class="absolute inset-0 bg-black opacity-20"></div>
-          <div class="absolute inset-0 flex items-end pb-8 pl-7">
-            <h3 class="text-white text-xl mr-3 font-medium">Brazil</h3>
-            <button class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white">03 places</button>
-          </div>
+        <div class="hidden lg:block relative">
+          <span
+            class="absolute w-5 h-6 lg:-left-3 xl:-left-6 2xl:-left-8 -top-[.5px] border-l-[1px] border-l-[#EAEAEA]"
+          ></span>
+          <ul class="flex items-center text-primary lg:space-x-4 xl:space-x-6">
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Favorite place end -->
-</body>
-
+      <div
+        class="absolute w-24 h-full bg-primary text-white right-0 flex items-center justify-center cursor-pointer"
+      >
+        <i class="fas fa-search"></i>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Banner start -->
+    <section
+      class="w-full h-[650px] flex items-center justify-center flex-col bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./assets/images/banner.png')"
+    >
+      <div class="text-white text-center">
+        <h1 class="text-6xl md:text-8xl xl:text-9xl mb-4">Australia</h1>
+        <p class="text-sm md:text-base xl:text-xl font-normal mb-12">
+          Pixel perfect design with awesome content
+        </p>
+        <button
+          class="bg-primary px-8 py-4 md:px-10 md:py-5 capitalize text-sm md:text-base rounded-md font-medium hover:bg-secondary transition delay-75"
+        >
+          explore now
+        </button>
+      </div>
+    </section>
+    <!-- Banner End -->
+    <!-- Favorite place start -->
+    <section class="py-10 md:py-20 text-center">
+      <div class="container">
+        <div class="heading pb-16">
+          <h2
+            class="capitalize text-2xl md:text-3xl xl:text-4xl font-normal pb-3"
+          >
+            popular Destination
+          </h2>
+          <p class="text-sm md:text-base font-normal text-dark-grey">
+            Suffered alteration in some form, by injected humour or good day
+            <br />
+            randomised booth anim 8-bit hella wolf moon beard words.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <!-- Place 1 -->
+          <div
+            class="rounded-sm relative overflow-hidden hover:-translate-y-3 transition duration-300"
+          >
+            <img
+              src="assets/images/favorite-place-1.png"
+              alt="favorite-place-1"
+              class="w-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div
+              class="absolute inset-0 flex items-end pb-8 pl-7 group transition duration-300"
+            >
+              <h3
+                class="text-white text-xl mr-3 font-medium group-hover:text-secondary"
+              >
+                Brazil
+              </h3>
+              <button
+                class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white group-hover:bg-secondary"
+              >
+                03 places
+              </button>
+            </div>
+          </div>
+          <!-- Place 2 -->
+          <div
+            class="rounded-sm relative overflow-hidden hover:-translate-y-3 transition duration-300"
+          >
+            <img
+              src="assets/images/favorite-place-1.png"
+              alt="favorite-place-1"
+              class="w-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div
+              class="absolute inset-0 flex items-end pb-8 pl-7 group transition duration-300"
+            >
+              <h3
+                class="text-white text-xl mr-3 font-medium group-hover:text-secondary"
+              >
+                Brazil
+              </h3>
+              <button
+                class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white group-hover:bg-secondary"
+              >
+                03 places
+              </button>
+            </div>
+          </div>
+          <!-- Place 3 -->
+          <div
+            class="rounded-sm relative overflow-hidden hover:-translate-y-3 transition duration-300"
+          >
+            <img
+              src="assets/images/favorite-place-1.png"
+              alt="favorite-place-1"
+              class="w-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div
+              class="absolute inset-0 flex items-end pb-8 pl-7 group transition duration-300"
+            >
+              <h3
+                class="text-white text-xl mr-3 font-medium group-hover:text-secondary"
+              >
+                Brazil
+              </h3>
+              <button
+                class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white group-hover:bg-secondary"
+              >
+                03 places
+              </button>
+            </div>
+          </div>
+          <!-- Place 4 -->
+          <div
+            class="rounded-sm relative overflow-hidden hover:-translate-y-3 transition duration-300"
+          >
+            <img
+              src="assets/images/favorite-place-1.png"
+              alt="favorite-place-1"
+              class="w-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div
+              class="absolute inset-0 flex items-end pb-8 pl-7 group transition duration-300"
+            >
+              <h3
+                class="text-white text-xl mr-3 font-medium group-hover:text-secondary"
+              >
+                Brazil
+              </h3>
+              <button
+                class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white group-hover:bg-secondary"
+              >
+                03 places
+              </button>
+            </div>
+          </div>
+          <!-- Place 5 -->
+          <div
+            class="rounded-sm relative overflow-hidden hover:-translate-y-3 transition duration-300"
+          >
+            <img
+              src="assets/images/favorite-place-1.png"
+              alt="favorite-place-1"
+              class="w-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div
+              class="absolute inset-0 flex items-end pb-8 pl-7 group transition duration-300"
+            >
+              <h3
+                class="text-white text-xl mr-3 font-medium group-hover:text-secondary"
+              >
+                Brazil
+              </h3>
+              <button
+                class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white group-hover:bg-secondary"
+              >
+                03 places
+              </button>
+            </div>
+          </div>
+          <!-- Place 6 -->
+          <div
+            class="rounded-sm relative overflow-hidden hover:-translate-y-3 transition duration-300"
+          >
+            <img
+              src="assets/images/favorite-place-1.png"
+              alt="favorite-place-1"
+              class="w-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div
+              class="absolute inset-0 flex items-end pb-8 pl-7 group transition duration-300"
+            >
+              <h3
+                class="text-white text-xl mr-3 font-medium group-hover:text-secondary"
+              >
+                Brazil
+              </h3>
+              <button
+                class="bg-primary py-1 px-4 rounded-full text-xs capitalize text-white group-hover:bg-secondary"
+              >
+                03 places
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Favorite place end -->
+    <!-- Slider start -->
+    <section class="py-10 md:py-20">
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="assets/images/banner2.png" alt="" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/banner3.png" alt="" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/bg_1.jpg" alt="" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slider end -->
+    <!-- Footer Start -->
+    <footer class="bg-[#040E27] text-white py-10 md:py-20">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <div class="pb-3 md:pb-0">
+            <div class="pb-5">
+              <a href="" class="text-3xl">Brand.</a>
+            </div>
+            <div class="text-sm font-normal">
+              <p class="pb-2">
+                Faydabad, Dhakkinkhan, Uttara <br />
+                Dhaka, Bangladesh
+              </p>
+              <p class="pb-2">+088 01967876543</p>
+              <p>jahir@gmail.com</p>
+            </div>
+          </div>
+          <!-- Company -->
+          <div class="pb-3 md:pb-0">
+            <div class="pb-5">
+              <h3 href="" class="text-sm md:text-xl">Company.</h3>
+            </div>
+            <ul class="text-sm font-normal capitalize space-y-4">
+              <li>pricing</li>
+              <li>about</li>
+              <li>gallery</li>
+              <li>concact</li>
+            </ul>
+          </div>
+          <!-- Popular Destination -->
+          <div>
+            <div class="pb-5">
+              <h3 href="" class="text-sm md:text-xl">Popular Destination.</h3>
+            </div>
+            <div class="grid grid-cols-2">
+              <ul class="text-sm font-normal capitalize space-y-4">
+                <li>Dhaka</li>
+                <li>Bandarban</li>
+                <li>Shylet</li>
+                <li>Saint Martin</li>
+              </ul>
+              <ul
+                class="text-sm font-normal capitalize space-y-4 md:place-self-center"
+              >
+                <li>Narail</li>
+                <li>Khulna</li>
+                <li>Jessore</li>
+                <li>Cox's Bazar</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Instagram -->
+          <div>
+            <div class="pb-5">
+              <h3 href="" class="text-sm md:text-xl">Instagram.</h3>
+            </div>
+            <div class="grid grid-cols-3 gap-3">
+              <div class="">
+                <img
+                  src="assets/images/insta-1.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/insta-1.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/insta-1.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/insta-1.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/insta-1.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/insta-1.png"
+                  alt=""
+                  class="w-full rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+      });
+    </script>
+  </body>
 </html>
