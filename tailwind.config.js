@@ -37,6 +37,7 @@ module.exports = {
         'dark-blue': '#5643fa',
         secondary: '#FF4A52',
         primary: '#00bcb3',
+        'primary-dark': '#0c6b66',
         'menu-color': '#040E27',
       },
     },
