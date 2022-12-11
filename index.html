@@ -70,7 +70,7 @@
       </div>
     </div>
     <div class="absolute w-24 h-full bg-primary text-white right-0 flex items-center justify-center cursor-pointer">
-      <i class="fas fa-search"></i>
+      <p class="font-semibold" data-modal-toggle="authentication-modal">Join Us</p>
     </div>
   </nav>
   <!-- navbar end -->
@@ -187,13 +187,44 @@
   <!-- Favorite place end -->
   <!-- Login && Register start -->
   <section class="py-20" id="register">
-    <div class="fixed inset-0 z-50 overflow-y-auto" dir="ltr">
-      <div class="min-h-full text-center">
-        <div class="fixed inset-0 h-full w-full bg-gray-900 bg-opacity-50">
-          <div
-            class="min-w-content relative inline-block max-w-full align-middle transition-all ltr:text-left opacity-100 scale-100">
+    <div id="" tabindex="-1" aria-hidden="true">
+      <div class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="relative min-h-full text-center">
+          <div class="fixed inset-0 h-full w-full bg-gray-900 bg-opacity-50">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal toggle -->
+    <button
+      class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      type="button" data-modal-toggle="authentication-modal">
+      Toggle modal
+    </button>
+
+    <!-- Main modal -->
+    <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+      <div class="relative w-full h-full max-w-md md:h-auto">
+        <!-- Modal content -->
+        <div
+          class="relative min-w-content inline-block max-w-full align-middle transition-all ltr:text-left opacity-100 scale-100 mt-16">
+          <button type="button"
+            class="absolute top-5 right-1 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+            data-modal-toggle="authentication-modal">
+            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <div class="">
             <div
-              class="h-full min-h-screen w-screen bg-white mt-4 py-6 px-5 sm:p-8 md:h-auto md:min-h-0 md:max-w-[480px] md:rounded-xl">
+              class="h-full min-h-screen w-screen bg-white py-6 px-5 sm:p-8 md:h-auto md:min-h-0 md:max-w-[480px] md:rounded-xl">
               <div class="text-center mb-12">
                 <div class="pb-5">
                   <a href="#" class="text-2xl">Brand.</a>
@@ -201,33 +232,48 @@
                 <p class="text-gray-500 text-sm">Login with your email & password</p>
               </div>
 
-              <form>
+              <form class="mb-8">
                 <div class="mb-6">
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                    email</label>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-500 dark:text-white">
+                    Email</label>
                   <input type="email" id="email"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-0 focus:outline-none block w-full p-2.5 transition duration-300 focus:border-primary ease-in-out"
                     placeholder="name@flowbite.com" required>
                 </div>
-                <div class="mb-6">
-                  <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                    password</label>
+                <div class="mb-8">
+                  <div class="flex items-center justify-between">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-500 dark:text-white">
+                      Password</label>
+                    <button type="button" class="text-xs text-primary">Forgot password?</button>
+                  </div>
+
                   <input type="password" id="password"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-0 focus:border-primary block w-full p-2.5 transition duration-300 ease-in-out"
                     required>
                 </div>
-                <button
-                  class="inline-flex items-center bg-primary hover:bg-primary-dark text-white justify-center shrink-0 font-semibold leading-none rounded-lg outline-none transition duration-300 ease-in-out focus:outline-none focus:shadow focus:ring-1 focus:ring-accent-700 text-light border border-transparent px-5 py-0 w-full sm:h-12">Login</button>
+                <button type="submit"
+                  class="items-center bg-primary hover:bg-primary-dark text-white font-semibold leading-none rounded-lg w-full outline-none transition duration-300 ease-in-out focus:outline-none focus:shadow focus:ring-1 focus:ring-accent-700 text-light border border-transparent px-5 py-2.5  sm:h-12">Login</button>
               </form>
-
+              <div class="relative flex items-center justify-center mb-8">
+                <hr class="w-full">
+                <span class="absolute bg-white px-3 text-gray-500">Or</span>
+              </div>
+              <div>
+                <button type="submit"
+                  class="mb-6 items-center bg-[#3498db] hover:bg-[#1870ab] text-white font-semibold leading-none rounded-lg w-full outline-none transition duration-300 ease-in-out focus:outline-none focus:shadow focus:ring-1 focus:ring-accent-700 text-light border border-transparent px-5 py-2.5  sm:h-12">
+                  <i class="fab fa-google mr-3"></i> Login with Google
+                </button>
+                <button type="submit"
+                  class="items-center bg-[#121212] hover:bg-[#050404] text-white font-semibold leading-none rounded-lg w-full outline-none transition duration-300 ease-in-out focus:outline-none focus:shadow focus:ring-1 focus:ring-accent-700 text-light border border-transparent px-5 py-2.5  sm:h-12">
+                  <i class="fas fa-mobile-alt mr-3"></i> Login with Mobile number</button>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
-    <div class="min-h-full ">
 
-    </div>
   </section>
   <!-- Login && Register end -->
   <!-- Footer Start -->
@@ -309,6 +355,7 @@
     </div>
   </footer>
   <!-- Footer End -->
+  <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
